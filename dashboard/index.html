@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COPY RADAR — Token Launch Radar</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>COPY RADAR <span class="tag">token-radar-01</span></h1>
+    <p class="sub">Trade the flow, not the hype. Every pre-token protocol priced the way the market
+    priced its leader — copy the leader, mirror the flow, farm the same way its holders did.</p>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<section class="method">
+  <strong>How a row is priced:</strong>
+  <span id="method-text">implied value = TVL &times; (leader market cap &divide; leader TVL, winsorised at 10&times;) &times; momentum &times; persistence &times; chain breadth.
+  The leader is the biggest live-token protocol in the same category. Nothing is hardcoded by name.</span>
+  <span class="warn">A protocol listed here records no token — that is not proof it has none. Implied values are this radar's claim, never a promise.</span>
+</section>
+
+<section class="controls">
+  <input id="q" type="search" placeholder="Search protocol or leader…" aria-label="Search">
+  <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+  <select id="chain" aria-label="Chain"><option value="">All chains</option></select>
+  <select id="signal" aria-label="Signal">
+    <option value="">All signals</option>
+    <option>STRONG COPY</option><option>COPY</option><option>WATCH</option><option>QUEUE</option>
+  </select>
+  <select id="sort" aria-label="Sort">
+    <option value="rank">Sort: rank</option>
+    <option value="implied">Sort: implied value</option>
+    <option value="tvl">Sort: TVL</option>
+    <option value="growth">Sort: 7-day growth</option>
+    <option value="age">Sort: oldest first</option>
+  </select>
+  <span class="count" id="count"></span>
+</section>
+
+<main>
+  <table id="board">
+    <thead><tr>
+      <th>#</th><th>Protocol</th><th>Category</th><th>Chains</th>
+      <th class="num">TVL</th><th class="num">7d</th><th class="num">Age</th>
+      <th class="num">Implied value</th><th>Copy this leader</th><th>Signal</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="empty" id="empty" hidden>No protocol matches this filter. Loosen one filter to see the board again.</p>
+</main>
+
+<section class="detail" id="detail" hidden></section>
+
+<section class="leaders">
+  <h2>Leaders to copy <span class="dim">— the live-token protocols every price on this board is copied from</span></h2>
+  <div class="leader-grid" id="leaders"></div>
+</section>
+
+<footer>
+  <p>Snapshot <span id="asof"></span> · Model <span id="model"></span> · Board: <span id="foot-count"></span> rows,
+  every watchlist protocol included. Farm steps name real costs and times; check them before you deposit.</p>
+</footer>
+
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
