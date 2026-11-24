@@ -1,6 +1,8 @@
 # COPY RADAR — Token Launch Radar
 
 [![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/jonas-zimmer-lab/token-radar-01-attempt-4/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/jonas-zimmer-lab/token-radar-01-attempt-4/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 Trade the flow, not the hype. COPY RADAR prices every pre-token protocol
 the way the market already priced its leader: the biggest live-token
